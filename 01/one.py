@@ -1,7 +1,7 @@
 left = []
 right = []
 
-with open("./one_data.py", "r") as f:
+with open("./data.txt", "r") as f:
     while line := f.readline():
         line_split = line.rstrip("\n").split("   ")
         left.append(int(line_split[0]))
