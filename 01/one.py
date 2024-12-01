@@ -7,8 +7,8 @@ with open("./one_data.py", "r") as f:
         left.append(int(line_split[0]))
         right.append(int(line_split[-1]))
 
-sorted_left = sorted(left, key=int)
-sorted_right = sorted(right, key=int)
+sorted_left = sorted(left)
+sorted_right = sorted(right)
 
 total_distance = 0
 for i, _ in enumerate(sorted_left):
